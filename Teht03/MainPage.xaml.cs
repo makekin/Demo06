@@ -37,6 +37,27 @@ namespace Teht03
 
         }
 
-        // lasin pinta ala lasketaan näin = lasin pinta-ala = (ikkunan leveys - karmin leveys *2) * (ikkunan pituus - karmin leveys * 2)
+        private void CalculateButtonClick(object sender, RoutedEventArgs e)
+        {
+            double leveys = double.Parse(IkkunanLeveys.Text);
+            double korkeus = double.Parse(IkkunanKorkeus.Text);
+            double karmi = double.Parse(KarminLeveys.Text);
+
+            double dIkkunanPintaAla = leveys * korkeus;
+            double dLasinPintaAla = dIkkunanPintaAla - ((leveys - (karmi * 2))*(korkeus - (karmi * 2)));
+            double dKarminPiiri = leveys * 2 + korkeus * 2;
+
+            string iPintaAla = dIkkunanPintaAla.ToString();
+            string lPintaAla = dLasinPintaAla.ToString();
+            string kPiiri = dKarminPiiri.ToString();
+
+            IkkunanPintaAla.Text = iPintaAla;
+            LasinPintaAla.Text = lPintaAla;
+            KarminPiiri.Text = kPiiri;
+               
+
+
+        }
+        
     }
 }

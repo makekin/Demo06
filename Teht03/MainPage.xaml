@@ -25,5 +25,11 @@
         <TextBlock x:Name="textBlock7" HorizontalAlignment="Left" Margin="928,446,0,0" TextWrapping="Wrap" Text="Lasin Pinta-Ala" VerticalAlignment="Top" SelectionChanged="textBlock7_SelectionChanged"/>
         <TextBlock x:Name="textBlock8" HorizontalAlignment="Left" Margin="936,500,0,0" TextWrapping="Wrap" Text="Karmin Piiri" VerticalAlignment="Top"/>
 
+        <Button x:Name="Calculate" 
+                Content="Suorita laskenta" 
+                HorizontalAlignment="Left" 
+                Margin="795,324,0,0" 
+                VerticalAlignment="Top"
+                Click="CalculateButtonClick"/>
     </Grid>
 </Page>
