@@ -1,0 +1,41 @@
+﻿<Page
+    x:Class="Teht02.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Teht02"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <Button x:Name="EuroButton" 
+                Content="Euro" 
+                HorizontalAlignment="Left" 
+                Margin="473,324,0,0" 
+                VerticalAlignment="Top" 
+                Click="EuroButtonClick" Background="#33FD0A0A"/>
+
+        <Button x:Name="MarkkaButton" 
+                Content="Markka" 
+                HorizontalAlignment="Left" 
+                Margin="795,324,0,0" 
+                VerticalAlignment="Top" 
+                Click="MarkkaButtonClick"/>
+
+        <TextBox x:Name="input" 
+                 HorizontalAlignment="Left" 
+                 Margin="618,206,0,0" 
+                 TextWrapping="Wrap" 
+                 Text="" 
+                 VerticalAlignment="Top"/>
+        
+        <TextBlock x:Name="Result" 
+                   HorizontalAlignment="Left" 
+                   Margin="627,465,0,0" 
+                   TextWrapping="Wrap" 
+                   Text="" 
+                   VerticalAlignment="Top" 
+                   Height="32"/>
+
+    </Grid>
+</Page>
